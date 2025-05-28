@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState } from 'react'
 import { getAddress } from 'viem'
 import { useWriteContract } from 'wagmi'
@@ -18,7 +17,6 @@ const AllowUSDC = () => {
             alert("Please connect your wallet first.")
             return
         }
-
         try {
             await writeContractAsync({
                 address: USDC_BASE,

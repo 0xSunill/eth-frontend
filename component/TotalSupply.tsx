@@ -4,7 +4,7 @@ import { erc20Abi, getAddress } from 'viem'
 import { useAccount, useReadContract } from 'wagmi'
 
 const USDC_BASE = getAddress('0x833589fCD6EDB6E08f4C7C32D4f71B54BDA02913')
-// const USDC_BASE = '0x833589fCD6EDB6E08f4C7C32D4f71B54BDA02913'
+
 const TotalSupply = () => {
   const { address } = useAccount()
 
